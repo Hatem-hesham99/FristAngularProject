@@ -1,0 +1,25 @@
+
+    <div class="navbar navbar-expand-lg bg-dark navbar-dark fixed-top smoth" [class.p-4]="!isScorlling" >
+        <div class="container">
+            <a class="navbar-brand rounded bg-body-secondary p-1 text-black" routerLink="/about" ><span class="text-danger" ><i class="fa-solid fa-flag"></i></span>  Frist Angular App  </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav m-auto mb-2 mb-lg-0">
+                <li class="nav-item me-2">
+                  <a class="nav-link" routerLink="/about" routerLinkActive=" rounded bg-danger">About</a>
+                </li>
+                <li class="nav-item me-2">
+                  <a class="nav-link" routerLink="/home" routerLinkActive=" rounded bg-danger">Home</a>
+                </li>
+                
+                <li class="nav-item me-2">
+                  <a class="nav-link" routerLink="/contact" routerLinkActive=" rounded bg-danger">Contact</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+    </div>
+
+   

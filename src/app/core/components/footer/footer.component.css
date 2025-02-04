@@ -1,0 +1,8 @@
+p{
+    color: white;
+    transition: color 0.5s;
+    margin-bottom:0 ;
+}
+p:hover{
+    color: chartreuse ;
+}
