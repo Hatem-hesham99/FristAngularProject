@@ -1,1 +1,9 @@
 /* You can add global styles to this file, and also import other style files */
+
+
+.pt{
+    padding-top: 105px;
+}
+:root{
+    --star-color:rgb(44, 62, 80);
+}

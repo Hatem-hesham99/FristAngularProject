@@ -1,0 +1,13 @@
+.form-control:focus{
+    border: none !important;
+    box-shadow: none;
+    outline: none;
+}
+.top-50{
+    top: 40px !important;
+}
+
+
+label{
+    transition: all 0.7s;
+}

@@ -1,0 +1,29 @@
+
+<section class="min-vh-100 pt " >
+    <div class="container">
+        <app-star [text]="'portfolio component'"></app-star>
+        <div class="row">
+            @for (img of images; track $index) {
+                <div class="col-sm-12 col-md-6 col-lg-4 ">
+                    <figure class="position-relative" (click)="imgSrc= img ; hiden = false " >
+                        <img [src]="img" class="w-100" alt="poert1">
+                        <figcaption 
+                        class="position-absolute d-flex justify-content-center align-items-center top-0 start-0 w-100 h-100  fa-6x text-white bg-danger">
+                            <i class="fa-solid fa-plus"></i>
+                        </figcaption>
+                    </figure>
+                </div>
+            }
+        </div>
+    </div>
+</section>
+
+
+<div [class]="{
+    'd-none': hiden,
+    
+}"
+ class="layer d-flex  justify-content-center align-items-center" (click)="hidenModel($event,img)" >
+    <img #img [src]="imgSrc"  class="w-50" alt="">
+</div>
+

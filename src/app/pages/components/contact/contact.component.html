@@ -1,0 +1,27 @@
+
+<section class="pt min-vh-100 pb-4 " >
+    <app-star [text]=" 'CONTACT SECTION' " ></app-star>
+
+    <div class="container mt-5">
+        <form class="w-50 mx-auto" >
+          
+              
+                <label for="userName" [class.top-50]="!userName.length" class=" position-relative text-danger" >userName:</label>
+                <input [(ngModel)]="userName"  id="userName" type="text" name="userName" placeholder="userName" class="form-control position-relative my-3">
+                
+              
+                <label for="userAge" [class.top-50]="!userAge.length" class=" position-relative text-danger" >userAge:</label>
+                <input [(ngModel)]="userAge"  id="userAge" type="text" name="userAge" placeholder="userAge" class="form-control position-relative my-3">
+    
+
+                <label for="userEmail" [class.top-50]="!userEmail.length" class=" position-relative text-danger" >userEmail:</label>
+                <input [(ngModel)]="userEmail"  id="userEmail" type="text" name="userEmail" placeholder="userEmail" class="form-control position-relative my-3">
+        
+                <label for="userPassword" [class.top-50]="!userPassword.length" class=" position-relative text-danger" >userPassword:</label>
+                <input [(ngModel)]="userPassword"  id="userPassword" type="text" name="userPassword" placeholder="userPassword" class="form-control position-relative my-3">
+        
+        
+            </form>
+    </div>
+
+</section>
